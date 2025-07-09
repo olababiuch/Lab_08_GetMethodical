@@ -21,11 +21,11 @@ public class DevTest {
         //boolean answer = SafeInput.getYNConfirm(in, "Do you want to continue?");
         //System.out.println("You answered: " + answer);
 
-        String ssn = SafeInput.getRegExString(in, "Enter your SSN (###-##-####)" , "^\\d{3}-\\d{2}-\\d{4}$");
-        System.out.println("You entered: " + ssn);
+        //String ssn = SafeInput.getRegExString(in, "Enter your SSN (###-##-####)" , "^\\d{3}-\\d{2}-\\d{4}$");
+        //System.out.println("You entered: " + ssn);
 
-        String mNumber = SafeInput.getRegExString(in, "Enter your UC Student M number (M#####)", "^(M|m)\\d{5}$");
-        System.out.println("You entered: " + mNumber);
+        //String mNumber = SafeInput.getRegExString(in, "Enter your UC Student M number (M#####)", "^(M|m)\\d{5}$");
+        //System.out.println("You entered: " + mNumber);
 
         String menu = SafeInput.getRegExString(in, "Enter menu choice [O,S,V,Q]", "^[OoSsVvQq]$");
         System.out.println("You entered: " + menu);

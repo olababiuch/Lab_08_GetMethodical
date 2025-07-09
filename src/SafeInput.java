@@ -116,6 +116,25 @@ public class SafeInput {
         } while (!valid);
         return response;
     }
+    public static void prettyHeader(String msg) {
+        int width = 60;
+        int msgLen = msg.length();
+        int totalPadding = width - msgLen - 6;
+        int leftPadding = totalPadding / 2;
+        int rightPadding = totalPadding - leftPadding;
+
+        for (int i = 0; i < width; i++) System.out.print("*");
+        System.out.println();
+
+        System.out.print("***");
+        for (int i = 0; i < leftPadding; i++) System.out.print(" ");
+        System.out.print(msg);
+        for (int i = 0; i < rightPadding; i++) System.out.print(" ");
+        System.out.println("***");
+
+        for (int i = 0; i < width; i++) System.out.print("*");
+        System.out.println();
+    }
 
 
 }
